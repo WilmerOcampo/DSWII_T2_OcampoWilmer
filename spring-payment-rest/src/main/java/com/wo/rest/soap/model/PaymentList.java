@@ -7,19 +7,20 @@
 
 package com.wo.rest.soap.model;
 
-import java.util.ArrayList;
-import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * <p>Clase Java para anonymous complex type.</p>
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.</p>
- * 
+ *
  * <pre>{@code
  * <complexType>
  *   <complexContent>
@@ -31,12 +32,10 @@ import jakarta.xml.bind.annotation.XmlType;
  *   </complexContent>
  * </complexType>
  * }</pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "payment"
+        "payment"
 })
 @XmlRootElement(name = "PaymentList")
 public class PaymentList {
@@ -45,28 +44,26 @@ public class PaymentList {
 
     /**
      * Gets the value of the payment property.
-     * 
+     *
      * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the payment property.</p>
-     * 
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * </p>
      * <pre>
      * getPayment().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link PaymentObject }
      * </p>
-     * 
-     * 
-     * @return
-     *     The value of the payment property.
+     *
+     * @return The value of the payment property.
      */
     public List<PaymentObject> getPayment() {
         if (payment == null) {

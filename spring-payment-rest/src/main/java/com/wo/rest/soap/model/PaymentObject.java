@@ -7,19 +7,16 @@
 
 package com.wo.rest.soap.model;
 
+import jakarta.xml.bind.annotation.*;
+
 import javax.xml.datatype.XMLGregorianCalendar;
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlSchemaType;
-import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
  * <p>Clase Java para PaymentObject complex type.</p>
- * 
+ *
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.</p>
- * 
+ *
  * <pre>{@code
  * <complexType name="PaymentObject">
  *   <complexContent>
@@ -34,15 +31,13 @@ import jakarta.xml.bind.annotation.XmlType;
  *   </complexContent>
  * </complexType>
  * }</pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PaymentObject", propOrder = {
-    "id",
-    "paymentDate",
-    "totalAmount",
-    "currency"
+        "id",
+        "paymentDate",
+        "totalAmount",
+        "currency"
 })
 public class PaymentObject {
 
@@ -56,7 +51,6 @@ public class PaymentObject {
 
     /**
      * Obtiene el valor de la propiedad id.
-     * 
      */
     public long getId() {
         return id;
@@ -64,7 +58,6 @@ public class PaymentObject {
 
     /**
      * Define el valor de la propiedad id.
-     * 
      */
     public void setId(long value) {
         this.id = value;
@@ -72,11 +65,9 @@ public class PaymentObject {
 
     /**
      * Obtiene el valor de la propiedad paymentDate.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getPaymentDate() {
         return paymentDate;
@@ -84,11 +75,9 @@ public class PaymentObject {
 
     /**
      * Define el valor de la propiedad paymentDate.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setPaymentDate(XMLGregorianCalendar value) {
         this.paymentDate = value;
@@ -96,7 +85,6 @@ public class PaymentObject {
 
     /**
      * Obtiene el valor de la propiedad totalAmount.
-     * 
      */
     public double getTotalAmount() {
         return totalAmount;
@@ -104,7 +92,6 @@ public class PaymentObject {
 
     /**
      * Define el valor de la propiedad totalAmount.
-     * 
      */
     public void setTotalAmount(double value) {
         this.totalAmount = value;
@@ -112,11 +99,9 @@ public class PaymentObject {
 
     /**
      * Obtiene el valor de la propiedad currency.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCurrency() {
         return currency;
@@ -124,11 +109,9 @@ public class PaymentObject {
 
     /**
      * Define el valor de la propiedad currency.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCurrency(String value) {
         this.currency = value;

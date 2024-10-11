@@ -1,4 +1,4 @@
-package com.wo.soap.util;
+package com.wo.rest.utl;
 
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class DateUtils {
+public class DateUtil {
 
     // XMLGregorianCalendar to Date
     public static Date xmlGregorianCalendarToDate(XMLGregorianCalendar calendar) {

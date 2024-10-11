@@ -5,7 +5,7 @@ import com.wo.soap.payment.PaymentList;
 import com.wo.soap.payment.PaymentListRequest;
 import com.wo.soap.payment.PaymentObject;
 import com.wo.soap.service.IPaymentService;
-import com.wo.soap.util.DateUtils;
+import com.wo.soap.util.DateUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
@@ -32,7 +32,7 @@ public class PaymentEndpoint {
             payments.forEach(obj -> {
                 PaymentObject objTemp = new PaymentObject();
                 objTemp.setId(obj.getId());
-                objTemp.setPaymentDate(DateUtils.dateToXmlGregorianCalendar(obj.getPaymentDate()));
+                objTemp.setPaymentDate(DateUtil.dateToXmlGregorianCalendar(obj.getPaymentDate()));
                 objTemp.setTotalAmount(obj.getTotalAmount());
                 objTemp.setCurrency(obj.getCurrency());
                 paymentObjects.add(objTemp);
