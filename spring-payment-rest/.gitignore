@@ -32,5 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 
-# Custom ignore
-/src/main/java/METAA-INF/
+# Ignore META-INF
+/spring-payment-rest/src/main/java/META-INF/
+/spring-payment-soap/src/main/java/META-INF/
