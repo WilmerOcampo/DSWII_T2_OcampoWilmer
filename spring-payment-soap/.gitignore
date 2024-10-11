@@ -31,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-# Ignore META-INF
-/spring-payment-rest/src/main/java/META-INF/
-/spring-payment-soap/src/main/java/META-INF/
