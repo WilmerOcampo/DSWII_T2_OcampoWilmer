@@ -1,3 +1,14 @@
+EJECUCIÓNñ
+
+1 - Ejecutar Script MySQL
+2 - Configurar datasource de application.yml
+3 - Ejecutar SOAP Server
+4 - Ejecutar API REST Server
+5 - Probar con SOAP UI
+6 - Consumir SOAP con API REST
+
+
+================================================================
 SOAP:
 URL: http://localhost:8090/ws/payment.wsdl
 FORMATO DE CONSULTA: 2024-10-11
