@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Custom ignore
+/src/main/java/METAA-INF/

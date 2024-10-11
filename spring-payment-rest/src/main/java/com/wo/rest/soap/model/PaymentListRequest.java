@@ -7,12 +7,10 @@
 
 package com.wo.rest.soap.model;
 
-import javax.xml.datatype.XMLGregorianCalendar;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
-import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
 
 
@@ -26,7 +24,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="paymentDate" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
+ *         <element name="paymentDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -43,18 +41,17 @@ import jakarta.xml.bind.annotation.XmlType;
 public class PaymentListRequest {
 
     @XmlElement(required = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar paymentDate;
+    protected String paymentDate;
 
     /**
      * Obtiene el valor de la propiedad paymentDate.
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public XMLGregorianCalendar getPaymentDate() {
+    public String getPaymentDate() {
         return paymentDate;
     }
 
@@ -63,10 +60,10 @@ public class PaymentListRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public void setPaymentDate(XMLGregorianCalendar value) {
+    public void setPaymentDate(String value) {
         this.paymentDate = value;
     }
 
